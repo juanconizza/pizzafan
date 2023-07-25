@@ -85,19 +85,12 @@ main {
     align-items: center;
 }
 
-.fotoPortada {
-
-    width: auto;
-    height: 700px;
-    border-radius: 1%;
-   
-    }
 
 /* BOTON COMENZAR */
 main a {
 
     width: 180px;
-    height: 50px;
+    height: 70px;
     background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     font-size: 25px;
@@ -118,7 +111,7 @@ main a {
 main a:hover {
 
     width: 180px;
-    height: 50px;
+    height: 70px;
     background-color: rgba(255, 255, 255, 0.9);
     font-size: 25px;
     border-radius: 15px;
