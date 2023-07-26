@@ -48,7 +48,7 @@ background-color: #DC9556;
 nav ul li a {
     text-decoration: none;
     font-family: "SemiBold";
-    font-size: 15px;
+    font-size: 1.3rem;
     color: black;
     display: inline-block;
     padding: 20px 20px;
@@ -58,7 +58,7 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: none;
     font-family: "SemiBold";
-    font-size: 15px;
+    font-size: 1.3rem;
     color: white;
 }
 
@@ -66,7 +66,7 @@ nav ul li a:hover {
 h1 {
 
 font-family: "Montserrat";
-font-size: 20px;
+font-size: 2.1rem;
 font-weight: bold;
 display: flex;
 flex-direction: row; 
@@ -87,6 +87,9 @@ main {
 
 
 /* BOTON COMENZAR */
+
+/* ANIMACIÓN */
+
 @keyframes pulsate {
    0% { transform: scale(1); }
    50% { transform: scale(1.1); }
@@ -169,135 +172,24 @@ main a {
 
 } 
 
+ 
+
  /* SECCIONES */
 
- section {
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-    justify-content: center;
-    margin: auto;
-    
- }
-
- /* SECCION MASA */
-
- .masaContenedor {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    height: 180px;
-    margin-bottom: 20px;
-    
- }
-
- .masa1 {
-   width: 48%;
-   background-color: #D9D9D9;
-   padding: 10px;
-
-}
-
-.masa1Imagen {
-      width: 54%;
-      
-   }
-    
- 
- .imagenMasa1 {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-  
- }
-
- .masaContenedor2 {
-
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   max-width: 100%;
-   height: 300px;
-   margin-bottom: 20px;
-
-
- }
-
- .masa2Imagen {
-   width: 50%;
-
- }
-
- .imagenMasa2 {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
- }
-
- .masa2 {
-   width: 50%;
-   padding-right: 5px;
-   background-color: #D9D9D9;
-   padding: 10px
-
- }
-
- .masa2 ul {
+ .listaIngredientes {
    list-style: none;
-   
-   }
-
-   .masa2 li {
-      display: flex;
-      justify-content: left;
-      padding: 2px;
+   margin: 0;
+   padding: 0;
       
    }
 
-   .iconoPizza {
-      margin-right: 10px;
-   }
+.subtituloSeccion {
+   background-color: #FFD364;
+   margin: 0;
+   padding: 0;
 
-   .contenedorSubtitulo {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding-top: 5px;
-      max-width: 100%;
-      background-color: #FFD364;
-      height: 40px;
-
-   }
-   
-.procedimientoMasaContenedor {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   max-width: 100%;
-   height: 350px;
-   margin-bottom: 20px;
-}
-
-.procedimientoMasa1 {
-   width: 46%;
-   background-color: #D9D9D9;
-   padding-left: 22px;
-   padding-top: 5px;
 
 }
-
-.procedimientoMasaImagen1 {
-   width: 52%;
-
-}
-.imagenProcedimiento1 {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-}
-
-
-
 
  /* FUENTES H2 */
  section h2 {
@@ -305,7 +197,7 @@ main a {
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 2rem;
 
  }
 
@@ -315,7 +207,7 @@ main a {
    text-transform: uppercase;
    font-weight: bold;
    padding-bottom: 10px;
-   font-size: 1.3rem;
+   font-size: 2rem;
 }
 
 /* FUENTES H4 */
@@ -324,13 +216,14 @@ section h4 {
    text-transform: uppercase;
    font-weight: 500;
    padding-bottom: 10px;
-   font-size: 1.1rem;
+   font-size: 1.7rem;
 }
 
  /* FUENTES P */
  section p, span, li {
     font-family: "Montserrat";
-    font-size: 1rem;
+    font-size: 1.3rem;
+    
     
  }
 
