@@ -1,0 +1,38 @@
+/* FOOTER */
+
+.contenedorSeguinos {
+    background-color: $color-fondo-footer-1;
+  }
+  
+  .derechos {
+    font-family: "Montserrat";
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 350;
+    background-color: $color-fondo-footer-2;
+  }
+  
+  .seguinos {
+    font-family: "SemiBold";
+    color: white;
+    font-size: 1.3rem;
+  }
+  
+  .redes {
+    color: white;
+    width: 20px;
+  }
+  
+  .redSocial {
+    width: 34px;
+    background-color: white;
+    border-radius: 15px;
+    border: white solid 2px;
+  
+    &:hover {
+      width: 34px;
+      background-color: #C51F15;
+      border-radius: 15px;
+      border: #C51F15 solid 2px;
+    }
+  }

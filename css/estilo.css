@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* FUENTES DEL DOCUMENTO */
 @font-face {
   font-family: Montserrat;
   src: url(../fonts/Montserrat-VariableFont_wght.ttf);
@@ -6,125 +8,6 @@
   font-family: SemiBold;
   src: url(../fonts/static/Montserrat-SemiBold.ttf);
 }
-header nav {
-  background-color: #DC9556;
-}
-
-.iconoMenuMobile {
-  background-color: white;
-  color: black;
-}
-
-.fuenteMenuIconoMobile,
-.navbar-toggler {
-  font-family: "Montserrat";
-  font-size: 1rem;
-  font-weight: bold;
-  color: black;
-  border: none;
-}
-
-.logo {
-  width: 240px;
-  height: 85px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-family: "SemiBold";
-  font-size: 1.2rem;
-  color: black;
-  display: inline-block;
-  padding: 20px 20px;
-}
-nav ul li a:hover {
-  text-decoration: none;
-  font-size: 1.3rem;
-  color: white;
-}
-
-h1 {
-  font-family: "Montserrat";
-  font-size: 1.3rem;
-  font-weight: bold;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 5px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-main a {
-  width: 180px;
-  height: 70px;
-  background-color: rgba(255, 255, 255, 0.9);
-  display: flex;
-  font-size: 25px;
-  border-radius: 15px;
-  font-family: "SemiBold";
-  text-decoration: none;
-  color: black;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  transform: scale(1);
-  transition: transform 0.2s ease-in-out;
-  animation: pulsate 1.5s infinite;
-}
-
-.contenedorSeguinos {
-  background-color: #113408;
-}
-
-.derechos {
-  font-family: "Montserrat";
-  font-size: 0.8rem;
-  color: black;
-  font-weight: 350;
-  background-color: #FFD364;
-}
-
-.seguinos {
-  font-family: "SemiBold";
-  color: white;
-  font-size: 1.3rem;
-}
-
-.redes {
-  color: white;
-  width: 20px;
-}
-
-.redSocial {
-  width: 34px;
-  background-color: white;
-  border-radius: 15px;
-  border: white solid 2px;
-}
-.redSocial:hover {
-  width: 34px;
-  background-color: #C51F15;
-  border-radius: 15px;
-  border: #C51F15 solid 2px;
-}
-
 .listaIngredientes {
   list-style: none;
   margin: 0;
@@ -168,6 +51,144 @@ section p.pNegrita,
 section span.pNegrita,
 section li.pNegrita {
   font-weight: bold;
+}
+
+/* BARRA DE NAVEGACION */
+header nav {
+  background-color: #DC9556;
+}
+
+.iconoMenuMobile {
+  background-color: white;
+  color: black;
+}
+
+.fuenteMenuIconoMobile,
+.navbar-toggler {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  border: none;
+}
+
+.logo {
+  width: 240px;
+  height: 85px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "SemiBold";
+  font-size: 1.2rem;
+  color: black;
+  display: inline-block;
+  padding: 20px 20px;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+}
+
+/* TITULO PRINCIPAL DE LA WEB DEBAJO DEL NAV */
+h1 {
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+/*/ PORTADA INICIO */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*  Definición de la animación pulsate */
+  /*  BOTON COMENZAR */
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+main a {
+  width: 180px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  font-size: 25px;
+  border-radius: 15px;
+  font-family: "SemiBold";
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+  animation: pulsate 1.5s infinite;
+}
+
+/* SECCIONES */
+.listaIngredientes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.subtituloSeccion {
+  background-color: #FFD364;
+  margin: 0;
+  padding: 0;
+}
+
+/* FOOTER */
+.contenedorSeguinos {
+  background-color: #113408;
+}
+
+.derechos {
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 350;
+  background-color: #78bc61;
+}
+
+.seguinos {
+  font-family: "SemiBold";
+  color: white;
+  font-size: 1.3rem;
+}
+
+.redes {
+  color: white;
+  width: 20px;
+}
+
+.redSocial {
+  width: 34px;
+  background-color: white;
+  border-radius: 15px;
+  border: white solid 2px;
+}
+.redSocial:hover {
+  width: 34px;
+  background-color: #C51F15;
+  border-radius: 15px;
+  border: #C51F15 solid 2px;
 }
 
 /*# sourceMappingURL=estilo.css.map */
