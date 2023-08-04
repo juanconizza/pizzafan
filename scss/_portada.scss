@@ -23,11 +23,11 @@ main {
   
 /*  BOTON COMENZAR */
     a {
-      width: 180px;
-      height: 70px;
+      width: 12rem;
+      height: 5rem;
       background-color: rgba(255, 255, 255, 0.9);
       display: flex;
-      font-size: 25px;
+      font-size: 1.5rem;
       border-radius: 15px;
       font-family: "SemiBold";
       text-decoration: none;
@@ -39,5 +39,14 @@ main {
       transform: scale(1);
       transition: transform 0.2s ease-in-out;
       animation: pulsate 1.5s infinite;
+
+      &:hover {
+        font-size: 1.6rem;
+        
+      }
+
     }
+
+
+
   }
