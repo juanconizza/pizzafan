@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilo.css">
-    
+
 </head>
 
 <body>
@@ -21,8 +21,8 @@
         <!-- BARRA DE NAVEGACION -->
         <nav class="container-fluid navbar navbar-expand-lg">
             <div class="container-fluid flex-row justify-content-around">
-                <div class="d-flex flex-column text-center">   
-<!-- MENU HAMBURGESA MOBILE -->
+                <div class="d-flex flex-column text-center">
+                    <!-- MENU HAMBURGESA MOBILE -->
                     <label class="fuenteMenuIconoMobile navbar-toggler ps-2">MENÚ</label>
                     <button class="iconoMenuMobile navbar-toggler px-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -40,7 +40,8 @@
                         <li><a href="index.html">INICIO</a><span class="d-none d-lg-inline">|</span></li>
                         <li><a href="pages/masa.html">MASA</a><span class="d-none d-lg-inline">|</span></li>
                         <li><a href="pages/recetas.html">RECETAS</a><span class="d-none d-lg-inline">|</span></li>
-                        <li><a href="pages/calculadora.html">CALCULADORA</a><span class="d-none d-lg-inline">|</span></li>
+                        <li><a href="pages/calculadora.html">CALCULADORA</a><span class="d-none d-lg-inline">|</span>
+                        </li>
                         <li><a href="pages/contacto.html">CONTACTO</a></li>
                     </ul>
                 </div>
@@ -49,21 +50,37 @@
         </nav>
 
 
-        <h1 class="container text-center">LA RECETA PERFECTA PARA TU PIZZA NAPOLITANA</h1>
+
 
 
     </header>
 
-    
-    <main class="container">
+    <!-- PORTADA PRINCIPAL -->
+    <main class="container-fluid">
+        
+        <div class=" text-center">
+            <h1 class="display-4 fw-bold tituloPrincipal">La Vera Pizza Napoletana</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Comenzá a cocinar este plato que ya es patrimonio de la humanidad en tu casa y
+                    seguí nuestra pasión por la pizza estilo napolitano.</p>
+            </div>
+            <div class="overflow-hidden" style="max-height: 50vh;">
+                
+                <div class="container position-relative">
+                    <img src="imagenes/foto-portada.jpg" class="img-fluid border rounded-3 shadow-lg mb-4"
+                        alt="foto pizza napolitana margarita" width="700" height="500" loading="lazy">
+                    <a class="botonComenzar position-absolute top-50 start-50 translate-middle"
+                        href="pages/masa.html">¡COMENZAR!</a>
+                </div>
+                
 
-        <img class="img-fluid rounded-4 mb-4" src="imagenes/foto-portada.jpg" alt="pizza napolitana portada">
-        <a href="pages/masa.html">¡COMENZAR!</a>
+            </div>
+        </div>
 
     </main>
 
 
-
+    <!-- FOOTER -->
     <footer class="d-flex flex-column">
 
         <div class="contenedorSeguinos container-fluid pb-3 pt-2 d-flex flex-column justify-content-center">
@@ -71,8 +88,9 @@
             <p class="seguinos text-center mb-2">¡SEGUINOS!</p>
 
             <div class="text-center">
-                <a class="redes" target="_blank" href="https://api.whatsapp.com/send?phone=+5493515921209&text=Hola,%20v%C3%AD%20tu%20pagina%20de%20Pizza%20Fan!..."><img class="redSocial"
-                        src="imagenes/bxl-whatsapp.svg" alt="boton whatsapp"></a>
+                <a class="redes" target="_blank"
+                    href="https://api.whatsapp.com/send?phone=+5493515921209&text=Hola,%20v%C3%AD%20tu%20pagina%20de%20Pizza%20Fan!..."><img
+                        class="redSocial" src="imagenes/bxl-whatsapp.svg" alt="boton whatsapp"></a>
                 <a class="redes" target="_blank" href="https://www.instagram.com/"><img class="redSocial"
                         src="imagenes/bxl-instagram.svg" alt="boton instagram"></a>
                 <a class="redes" target="_blank" href="https://www.facebook.com/"><img class="redSocial"
@@ -82,10 +100,10 @@
 
         </div>
 
-        <p class="derechos container-fluid p-2 text-center">PizzaFan.Ar 2023 - Todos los Derechos Reservados</p>
+        <p class="derechos container-fluid m-0 p-2 text-center">PizzaFan.Ar 2023 - Todos los Derechos Reservados</p>
 
     </footer>
-
+    <!-- SCRIPT BOOTSTRAPS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
