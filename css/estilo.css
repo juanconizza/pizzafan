@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*SE REDUCE TODO EL HTML PARA AJUSTAR LOS REM*/
 html {
   font-size: 70%;
@@ -98,27 +97,7 @@ h1 {
   margin: 5px;
 }
 
-/*/ PORTADA INICIO */
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /*  Definición de la animación pulsate */
-  /*  BOTON COMENZAR */
-}
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-main .botonComenzar {
+.botonComenzar {
   width: 12rem;
   height: 5rem;
   background-color: rgba(255, 255, 255, 0.9);
@@ -130,15 +109,29 @@ main .botonComenzar {
   color: black;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   transform: scale(1);
   transition: transform 0.2s ease-in-out;
   animation: pulsate 1.5s infinite;
 }
-main .botonComenzar:hover {
+.botonComenzar:hover {
   font-size: 1.6rem;
 }
 
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* SECCIONES */
 .listaIngredientes {
   list-style: none;
