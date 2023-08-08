@@ -128,7 +128,6 @@ main .botonComenzar {
   font-family: "SemiBold";
   text-decoration: none;
   color: black;
-  position: absolute;
   justify-content: center;
   align-items: center;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
