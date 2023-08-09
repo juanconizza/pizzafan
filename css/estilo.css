@@ -13,42 +13,8 @@ html {
   src: url(../fonts/static/Montserrat-SemiBold.ttf);
 }
 .tituloPrincipal {
-  font-family: "Montserrat";
   font-weight: bold;
   font-size: 3rem;
-}
-
-section h2 {
-  font-family: "Montserrat";
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-bottom: 10px;
-  font-size: 1.5rem;
-}
-section h3 {
-  font-family: "Montserrat";
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-bottom: 10px;
-  font-size: 1.5rem;
-}
-section h4 {
-  font-family: "Montserrat";
-  text-transform: uppercase;
-  font-weight: 500;
-  padding-bottom: 10px;
-  font-size: 1.2rem;
-}
-section p,
-section span,
-section li {
-  font-family: "Montserrat";
-  font-size: 1.1rem;
-}
-section p.pNegrita,
-section span.pNegrita,
-section li.pNegrita {
-  font-weight: bold;
 }
 
 /* BARRA DE NAVEGACION */
@@ -95,6 +61,33 @@ h1 {
   flex-direction: row;
   justify-content: center;
   margin: 5px;
+}
+
+section {
+  font-family: "Montserrat";
+}
+section h2,
+section h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+section h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+section p,
+section span,
+section li {
+  font-size: 1.1rem;
+}
+section p.pNegrita,
+section span.pNegrita,
+section li.pNegrita {
+  font-weight: bold;
 }
 
 .botonComenzar {
@@ -145,6 +138,33 @@ h1 {
   background-color: #FFD364;
   margin: 0;
   padding: 0;
+}
+
+section {
+  font-family: "Montserrat";
+}
+section h2,
+section h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+section h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+section p,
+section span,
+section li {
+  font-size: 1.1rem;
+}
+section p.pNegrita,
+section span.pNegrita,
+section li.pNegrita {
+  font-weight: bold;
 }
 
 /* FOOTER */
