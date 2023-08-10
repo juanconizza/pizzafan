@@ -13,9 +13,32 @@
   }
 
   //FUENTES 
-  
+
   section {
+    
     @include estilo-textos;
+
+    @media (min-width: 991px) {
+    
+      h2,
+      h3 {
+        font-size: 2.5rem;
+      }
+    
+      h4 {
+        font-size: 1.8rem;
+      }
+    
+      p,
+      span,
+      li {
+        font-size: 1.7rem;
+  
+      }
+  
+    }
   
   }
+  
+
   

@@ -1,55 +1,64 @@
 /* BARRA DE NAVEGACION */
 
 header nav {
-    background-color: $color-fondo-nav;
-  }
-  
-  .iconoMenuMobile {
-    background-color: white;
-    color: black;
-  }
-  
-  .fuenteMenuIconoMobile,
-  .navbar-toggler {
-    font-family: "Montserrat";
-    font-size: 1rem;
-    font-weight: bold;
-    color: black;
-    border: none;
-  }
-  
-  .logo {
-    width: 200px;
-    
-  }
-  
-  nav {
-    ul {
-      li {
-        a {
-          text-decoration: none;
-          font-family: "SemiBold";
-          font-size: 1.2rem;
-          color: black;
-          display: inline-block;
-          padding: 20px 20px;
-  
-          &:hover {
-            color: white;
-          }
+  background-color: $color-fondo-nav;
+}
+
+.iconoMenuMobile {
+  background-color: white;
+  color: black;
+}
+
+.fuenteMenuIconoMobile,
+.navbar-toggler {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  border: none;
+}
+
+.logo {
+  width: 200px;
+
+}
+
+nav {
+  ul {
+    li {
+      a {
+        text-decoration: none;
+        font-family: "SemiBold";
+        font-size: 1.2rem;
+        color: black;
+        display: inline-block;
+        padding: 20px 20px;
+
+        &:hover {
+          color: white;
         }
       }
     }
   }
-  
- /* TITULO PRINCIPAL DE LA WEB DEBAJO DEL NAV */
+}
 
+/* TITULO PRINCIPAL DE LA WEB DEBAJO DEL NAV */
+
+h1 {
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+//ADAPTAMOS TAMAÑO PARA PANTALLAS ESCRITORIO
+
+@media (min-width: 991px) {
   h1 {
-    font-family: "Montserrat";
-    font-size: 1.3rem;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 5px;
+    font-size: 1.7rem;
   }
+
+}
