@@ -1,44 +1,116 @@
  /* SECCIONES */
- 
+
  .listaIngredientes {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+
+ .subtituloSeccion {
+   background-color: $color-fondo-seccion;
+   margin: 0;
+   padding: 0;
+ }
+
+ //FUENTES 
+
+ section {
+
+   @include estilo-textos;
+
+   @media (min-width: 991px) {
+
+     h2,
+     h3 {
+       font-size: 2.5rem;
+     }
+
+     h4 {
+       font-size: 1.8rem;
+     }
+
+     p,
+     span,
+     li {
+       font-size: 1.7rem;
+
+     }
+
+   }
+
+ }
+
+
+ //FORMULARIO CALCULADORA
+
+ .formularioCalculadora {
+   display: flex;
+   flex-direction: column;
+ }
+
+ //BOTON CALCULADORA
+
+ .botonCalculadora {
+   background-color: white;
+   width: 100px;
+   height: 25px;
+   border: none;
+   font-family: "Montserrat";
+   font-size: 1.5rem;
+   font-weight: 500;
+
+   &:hover {
+     background-color: $color-fondo-footer-2;
+
+   }
+
+ }
+
+ //CASILLA CALCULADORA
+
+ .casillaCalculadora {
+   width: 80px;
+   height: 30px;
+   border: none;
+   font-size: 1.5rem;
+   font-weight: 500;
+   text-align: center;
+
+ }
+
+ //CONTACTO
+
+ .formContacto {
+
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-bottom: 10px;
+   height: 30px;
+
+   
+ }
+
+ .formContactoTexto {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  height: 100px;
+}
+
+.botonEnviar {
+  background-color: white;
+  width: 100px;
+  height: 50px;
+  border: none;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: auto;
+
+  &:hover {
+    background-color: $color-fondo-footer-2;
+
   }
-  
-  .subtituloSeccion {
-    background-color: $color-fondo-seccion;
-    margin: 0;
-    padding: 0;
-  }
 
-  //FUENTES 
 
-  section {
-    
-    @include estilo-textos;
-
-    @media (min-width: 991px) {
-    
-      h2,
-      h3 {
-        font-size: 2.5rem;
-      }
-    
-      h4 {
-        font-size: 1.8rem;
-      }
-    
-      p,
-      span,
-      li {
-        font-size: 1.7rem;
-  
-      }
-  
-    }
-  
-  }
-  
-
-  
+}

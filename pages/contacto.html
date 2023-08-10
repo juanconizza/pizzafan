@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contacta con Pizza Fan para tus comentarios, preguntas y sugerencias. Queremos mejorar y apreciamos tu opinión. Si te encantó nuestra web, tienes consultas o simplemente deseas enviarnos un agradecimiento, utiliza nuestro formulario de contacto. Estamos aquí para ayudarte a llevar el arte de la pizza napolitana a tu hogar. ¡Esperamos saber de ti!">
+    <meta name="description"
+        content="Contacta con Pizza Fan para tus comentarios, preguntas y sugerencias. Queremos mejorar y apreciamos tu opinión. Si te encantó nuestra web, tienes consultas o simplemente deseas enviarnos un agradecimiento, utiliza nuestro formulario de contacto. Estamos aquí para ayudarte a llevar el arte de la pizza napolitana a tu hogar. ¡Esperamos saber de ti!">
     <title>Contacto - Contáctanos para Comentarios, Consultas y Sugerencias | Pizza Fan</title>
     <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
     <!-- BOOTSTRAP -->
@@ -54,7 +55,7 @@
     <main>
         <h1 class="container text-center">LA RECETA PERFECTA PARA TU PIZZA NAPOLITANA</h1>
     </main>
-<!-- SECCION CONTACTO -->
+    <!-- SECCION CONTACTO -->
     <section class="container mb-2">
 
         <h2 class="container text-center subtituloSeccion pt-2 pb-2">CONTACTO</h2>
@@ -66,16 +67,21 @@
                 <p>Si te gustó nuestra web, tenés alguna duda o simplemente querés enviarnos un “GRACIAS!” te dejamos a
                     continuación nuestro formulario de contacto. </p>
 
-                <form>
-                    <label for="Nombre">Nombre:</label>
-                    <input id="nombre" type="text">
-                    <label for="Apellido">Apellido:</label>
-                    <input id="apellido" type="text">
-                    <label for="Mensaje">Mensaje:</label>
-                    <textarea id="mensaje" cols="30" rows="10"></textarea>
+                <form class="d-flex flex-column text-center">
 
-                    <button type="submit"><img src="../imagenes/contacto/bx-mail-send.svg"
-                            alt="Icono de Carta"><br>ENVIAR</button>
+                    <label for="Nombre">Nombre</label>
+                    <input class="formContacto" id="nombre" type="text">
+
+                    <label for="Apellido">Apellido</label>
+                    <input class="formContacto" id="apellido" type="text">
+
+
+
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea class="formContactoTexto" id="mensaje" cols="30" rows="10"></textarea>
+
+                    <button class="botonEnviar mb-5" type="submit"><img src="../imagenes/contacto/bx-mail-send.svg"
+                            alt="Icono de Carta">ENVIAR</button>
 
                 </form>
 
@@ -91,7 +97,7 @@
 
 
     </section>
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="d-flex flex-column">
 
         <div class="contenedorSeguinos container-fluid pb-3 pt-2 d-flex flex-column justify-content-center">
