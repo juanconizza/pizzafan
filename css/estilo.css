@@ -40,6 +40,9 @@ header nav {
   width: 200px;
 }
 
+nav {
+  border-bottom: 1.5px solid gray;
+}
 nav ul li a {
   text-decoration: none;
   font-family: "SemiBold";
@@ -264,6 +267,10 @@ section li.pNegrita {
   background-color: #C51F15;
   border-radius: 15px;
   border: #C51F15 solid 2px;
+}
+
+footer {
+  border-top: 1.5px solid gray;
 }
 
 /*# sourceMappingURL=estilo.css.map */
