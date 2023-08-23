@@ -16,10 +16,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
     <!-- ANIMACIONES -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -58,12 +55,14 @@
     </header>
 
     <main>
-        <h1 class="mb-5 text-center animate__animated animate__fadeInUp">LA RECETA PERFECTA PARA TU PIZZA NAPOLITANA</h1>
+        <h1 class="mb-5 text-center animate__animated animate__fadeInUp">LA RECETA PERFECTA PARA TU PIZZA NAPOLITANA
+        </h1>
     </main>
     <!-- SECCION CALCULADORA -->
     <section class="container mb-2">
 
-        <h2 class="container text-center subtituloSeccion pt-2 pb-2 animate__animated animate__fadeInUp">CALCULADORA</h2>
+        <h2 class="container text-center subtituloSeccion pt-2 pb-2 animate__animated animate__fadeInUp">CALCULADORA
+        </h2>
 
         <div class="row mt-2 p-0 m-0 container-fluid animate__animated animate__fadeInUp">
             <div class="col-lg-6 col-sm-12 pt-2 ps-2 m-0 bg-secondary-subtle">
@@ -98,10 +97,6 @@
             </div>
         </div>
 
-        
-
-
-
 
 
     </section>
@@ -133,36 +128,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-        
-<!-- SCRIPT CALCULADORA DE MASA  -->
-        <script>
-            function calcular() {
-                var pesoBollo = parseFloat(document.getElementById("pesoDeBollo").value);
-                var cantidadPizzas = parseInt(document.getElementById("cantidadDePizzas").value);
 
-                if (pesoBollo >= 200 && pesoBollo <= 400 && cantidadPizzas > 0) {
-                    var harina = pesoBollo * 0.588235;
-                    var agua = pesoBollo - harina;
-                    var totalHarina = harina * cantidadPizzas;
-                    var totalAgua = agua * cantidadPizzas;
-                    var totalPoolish = 0.30 * totalHarina;
+    <!-- SCRIPT CALCULADORA DE MASA  -->
+    <script>
+        function calcular() {
+            var pesoBollo = parseFloat(document.getElementById("pesoDeBollo").value);
+            var cantidadPizzas = parseInt(document.getElementById("cantidadDePizzas").value);
 
-                    document.getElementById("harinaResultado").textContent = formatResultado(totalHarina);
-                    document.getElementById("aguaResultado").textContent = formatResultado(totalAgua);
-                    document.getElementById("poolishResultado").textContent = formatResultado(totalPoolish);
-                } else {
-                    alert("Ingresa un peso de bollo válido (entre 200 y 400 gramos) y una cantidad de pizzas mayor a cero.");
-                }
+            if (pesoBollo >= 200 && pesoBollo <= 400 && cantidadPizzas > 0) {
+                var harina = pesoBollo * 0.588235;
+                var agua = pesoBollo - harina;
+                var totalHarina = harina * cantidadPizzas;
+                var totalAgua = agua * cantidadPizzas;
+                var totalPoolish = 0.30 * totalHarina;
+
+                document.getElementById("harinaResultado").textContent = formatResultado(totalHarina);
+                document.getElementById("aguaResultado").textContent = formatResultado(totalAgua);
+                document.getElementById("poolishResultado").textContent = formatResultado(totalPoolish);
+            } else {
+                alert("Ingresa un peso de bollo válido (entre 200 y 400 gramos) y una cantidad de pizzas mayor a cero.");
             }
+        }
 
-            function formatResultado(valor) {
-                if (valor > 1000) {
-                    return (valor / 1000).toFixed(2) + " kilos";
-                } else {
-                    return Math.floor(valor) + " gramos"; 
-                }
+        function formatResultado(valor) {
+            if (valor > 1000) {
+                return (valor / 1000).toFixed(2) + " kilos";
+            } else {
+                return Math.floor(valor) + " gramos";
             }
-        </script>
+        }
+    </script>
 
 
 

@@ -16,10 +16,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
     <!-- ANIMACIONES -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -58,7 +55,8 @@
     </header>
 
     <main>
-        <h1 class="mb-5 text-center animate__animated animate__fadeInUp">LA RECETA PERFECTA PARA TU PIZZA NAPOLITANA</h1>
+        <h1 class="mb-5 text-center animate__animated animate__fadeInUp">LA RECETA PERFECTA PARA TU PIZZA NAPOLITANA
+        </h1>
     </main>
     <!-- SECCION CONTACTO -->
     <section class="container mb-2">
@@ -72,7 +70,7 @@
                 <p>Si te gustó nuestra web, tenés alguna duda o simplemente querés enviarnos un “GRACIAS!” te dejamos a
                     continuación nuestro formulario de contacto. </p>
 
-                <form class="d-flex flex-column text-center">
+                <form method="post" name="formularioDeContacto" netlify class="d-flex flex-column text-center">
 
                     <label for="Nombre">Nombre</label>
                     <input class="formContacto" id="nombre" type="text">
@@ -80,12 +78,10 @@
                     <label for="Apellido">Apellido</label>
                     <input class="formContacto" id="apellido" type="text">
 
-
-
                     <label for="Mensaje">Mensaje</label>
                     <textarea class="formContactoTexto" id="mensaje" cols="30" rows="10"></textarea>
 
-                    <button class="botonEnviar mb-5" type="submit"><img src="../imagenes/contacto/bx-mail-send.svg"
+                    <button class="botonEnviar mb-5" type="submit" id="enviar"><img src="../imagenes/contacto/bx-mail-send.svg"
                             alt="Icono de Carta">ENVIAR</button>
 
                 </form>
