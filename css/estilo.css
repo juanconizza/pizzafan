@@ -41,7 +41,7 @@ header nav {
 }
 
 nav {
-  border-bottom: 1.5px solid gray;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
 }
 nav ul li a {
   text-decoration: none;
@@ -121,6 +121,18 @@ h1 {
 .imgCarrusel {
   height: 500px;
   object-fit: cover;
+}
+
+.separadorInicio {
+  width: auto;
+  height: 1.5rem;
+  background-color: #C51F15;
+  margin-bottom: 1rem;
+}
+
+.iconoPortada {
+  width: 100px;
+  height: auto;
 }
 
 /* SECCIONES */
@@ -270,7 +282,7 @@ section li.pNegrita {
 }
 
 footer {
-  border-top: 1.5px solid gray;
+  box-shadow: 4px 0 4px 3px rgba(0, 0, 0, 0.2);
   margin-top: 50vh;
 }
 

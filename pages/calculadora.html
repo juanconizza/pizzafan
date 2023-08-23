@@ -98,34 +98,7 @@
             </div>
         </div>
 
-        <script>
-            function calcular() {
-                var pesoBollo = parseFloat(document.getElementById("pesoDeBollo").value);
-                var cantidadPizzas = parseInt(document.getElementById("cantidadDePizzas").value);
-
-                if (pesoBollo >= 200 && pesoBollo <= 400 && cantidadPizzas > 0) {
-                    var harina = pesoBollo * 0.588235;
-                    var agua = pesoBollo - harina;
-                    var totalHarina = harina * cantidadPizzas;
-                    var totalAgua = agua * cantidadPizzas;
-                    var totalPoolish = 0.30 * totalHarina;
-
-                    document.getElementById("harinaResultado").textContent = formatResultado(totalHarina);
-                    document.getElementById("aguaResultado").textContent = formatResultado(totalAgua);
-                    document.getElementById("poolishResultado").textContent = formatResultado(totalPoolish);
-                } else {
-                    alert("Ingresa un peso de bollo válido (entre 200 y 400 gramos) y una cantidad de pizzas mayor a cero.");
-                }
-            }
-
-            function formatResultado(valor) {
-                if (valor > 1000) {
-                    return (valor / 1000).toFixed(2) + " kilos";
-                } else {
-                    return Math.floor(valor) + " gramos"; 
-                }
-            }
-        </script>
+        
 
 
 
@@ -160,6 +133,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+        
+<!-- SCRIPT CALCULADORA DE MASA  -->
+        <script>
+            function calcular() {
+                var pesoBollo = parseFloat(document.getElementById("pesoDeBollo").value);
+                var cantidadPizzas = parseInt(document.getElementById("cantidadDePizzas").value);
+
+                if (pesoBollo >= 200 && pesoBollo <= 400 && cantidadPizzas > 0) {
+                    var harina = pesoBollo * 0.588235;
+                    var agua = pesoBollo - harina;
+                    var totalHarina = harina * cantidadPizzas;
+                    var totalAgua = agua * cantidadPizzas;
+                    var totalPoolish = 0.30 * totalHarina;
+
+                    document.getElementById("harinaResultado").textContent = formatResultado(totalHarina);
+                    document.getElementById("aguaResultado").textContent = formatResultado(totalAgua);
+                    document.getElementById("poolishResultado").textContent = formatResultado(totalPoolish);
+                } else {
+                    alert("Ingresa un peso de bollo válido (entre 200 y 400 gramos) y una cantidad de pizzas mayor a cero.");
+                }
+            }
+
+            function formatResultado(valor) {
+                if (valor > 1000) {
+                    return (valor / 1000).toFixed(2) + " kilos";
+                } else {
+                    return Math.floor(valor) + " gramos"; 
+                }
+            }
+        </script>
+
+
+
 </body>
 
 </html>
